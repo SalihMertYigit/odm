@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
+  <name>AracMarkaTablosu</name>
+  <uuid>8d6cb9fa-193d-496b-9cdb-34eb6b26f322</uuid>
+  <locale>en_US</locale>
+  <definition>
+<DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
+  <Body>
+    <Structure>
+      <ConditionDefinitions>
+        <ConditionDefinition Id="C0">
+          <ExpressionDefinition>
+            <Text><![CDATA[the marka of the otomobil bilgileri of the musteri bilgileri of sigortaRequest is <a MarkaDomain>]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+      </ConditionDefinitions>
+      <ActionDefinitions>
+        <ActionDefinition Id="A1">
+          <ExpressionDefinition>
+            <Text><![CDATA[set arabaMarkaKatsayisi to <a number>]]></Text>
+          </ExpressionDefinition>
+        </ActionDefinition>
+        <ActionDefinition Id="A0">
+          <ExpressionDefinition>
+            <Text><![CDATA[set the odenecek tutar of sigortaResponse  to the odenecek tutar of sigortaResponse * arabaMarkaKatsayisi]]></Text>
+          </ExpressionDefinition>
+        </ActionDefinition>
+      </ActionDefinitions>
+    </Structure>
+    <Contents>
+      <Partition DefId="C0">
+        <Condition>
+          <Expression>
+            <Param><![CDATA[Honda]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA[1.6]]></Param>
+              </Expression>
+            </Action>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[Bmw]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA[1.1]]></Param>
+              </Expression>
+            </Action>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[Ford]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA[1.2]]></Param>
+              </Expression>
+            </Action>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[Citroen]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA[1.03]]></Param>
+              </Expression>
+            </Action>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[Kia]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA[1.05]]></Param>
+              </Expression>
+            </Action>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[Suzuki]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA[1.15]]></Param>
+              </Expression>
+            </Action>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[Volkswagen]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA[1.25]]></Param>
+              </Expression>
+            </Action>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[Toyota]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA[1.09]]></Param>
+              </Expression>
+            </Action>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+      </Partition>
+    </Contents>
+  </Body>
+  <Resources DefaultLocale="en_US">
+    <ResourceSet Locale="en_TR">
+      <Data Name="Definitions(A0)#Width"><![CDATA[472]]></Data>
+      <Data Name="Definitions(A1)#Width"><![CDATA[67]]></Data>
+      <Data Name="Definitions(C0)#HeaderText"><![CDATA[Marka]]></Data>
+      <Data Name="Definitions(C0)#Width"><![CDATA[473]]></Data>
+    </ResourceSet>
+  </Resources>
+</DT></definition>
+</ilog.rules.studio.model.dt:DecisionTable>

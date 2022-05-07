@@ -1,0 +1,46 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/AracSigortaBOM//TrafikSigortasi"
+property uuid "4c676e3e-7934-4bc0-b465-13768b8b26aa"
+
+public class Musteri
+{
+    public int aracSahibiToplamKazaTutari;
+    public int ehliyetYasi;
+    public int musteriYasi;
+    public Otomobil otomobilBilgileri;
+    public Musteri();
+}
+
+public class Otomobil
+{
+    public int arabaYasi;
+    public int aracDeger;
+    public string aracTuru;
+    public int marka;
+    public MarkaDomain markaSanal;
+    public int motorHacmi;
+    public int tramerKaydi;
+    public Otomobil();
+}
+
+public class OtomobilRequest
+{
+    public Musteri musteriBilgileri;
+    public OtomobilRequest();
+}
+
+public class OtomobilResponse
+{
+    public string mesaj;
+    public int odenecekTutar;
+    public Otomobil otomobilBilgileri;
+    public OtomobilResponse();
+}
+
+public class util
+{
+    public util();
+    public static void aracBilgileriSetle(OtomobilRequest arg1, OtomobilResponse arg2);
+}
+

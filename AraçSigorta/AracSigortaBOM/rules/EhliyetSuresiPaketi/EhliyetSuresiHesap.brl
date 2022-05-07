@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>EhliyetSuresiHesap</name>
+  <uuid>31b72820-ea29-4bd8-b684-fbf3213d838b</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if the ehliyet yasi of the musteri bilgileri of sigortaRequest is at most 4
+then
+set the odenecek tutar of sigortaResponse to the odenecek tutar of sigortaResponse +300; ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

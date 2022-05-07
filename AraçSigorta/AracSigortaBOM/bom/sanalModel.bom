@@ -1,0 +1,59 @@
+
+property uuid "37f3648e-90eb-4ecf-b0b4-b9ca9eeb42f3"
+
+public class MarkaDomain
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "1"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en" "2"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "0"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
+        property domainProviderResource "MarkaModelDbSample.xlsx"
+        property domainValueProviderName "com.ibm.rules.domainProvider.msexcel2007"
+{
+    domain 
+    {
+        static AUDİ,
+        static BMW,
+        static DACIA,
+        static HONDA,
+        static HYUNDAİ,
+        static KİA,
+        static OPEL,
+        static PEUGEOT,
+        static SKODA,
+        static SUZUKİ,
+        static VOLKSWAGEN,
+        static MERCEDES,
+        static CHEVROLET,
+        static RENAULT,
+        static VOLVO,
+        static CİTROEN,
+        static NİSSAN,
+        static TOYOTA,
+        static FORD,
+        static FİAT,
+        static SEAT
+    }
+    public static final readonly MarkaDomain AUDİ;
+    public static final readonly MarkaDomain BMW;
+    public static final readonly MarkaDomain CHEVROLET;
+    public static final readonly MarkaDomain CİTROEN;
+    public static final readonly MarkaDomain DACIA;
+    public static final readonly MarkaDomain FORD;
+    public static final readonly MarkaDomain FİAT;
+    public static final readonly MarkaDomain HONDA;
+    public static final readonly MarkaDomain HYUNDAİ;
+    public static final readonly MarkaDomain KİA;
+    public static final readonly MarkaDomain MERCEDES;
+    public static final readonly MarkaDomain NİSSAN;
+    public static final readonly MarkaDomain OPEL;
+    public static final readonly MarkaDomain PEUGEOT;
+    public static final readonly MarkaDomain RENAULT;
+    public static final readonly MarkaDomain SEAT;
+    public static final readonly MarkaDomain SKODA;
+    public static final readonly MarkaDomain SUZUKİ;
+    public static final readonly MarkaDomain TOYOTA;
+    public static final readonly MarkaDomain VOLKSWAGEN;
+    public static final readonly MarkaDomain VOLVO;
+}
+

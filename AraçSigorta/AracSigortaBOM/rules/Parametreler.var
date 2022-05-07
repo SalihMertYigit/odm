@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Parametreler</name>
+  <uuid>307c40c0-13cc-4c5e-9228-c5d61e0eaa99</uuid>
+  <variables name="arabayasKatsayisi" type="java.lang.Double" initialValue="1" verbalization="arabayasKatsayisi"/>
+  <variables name="arabadegerkatsayisi" type="java.lang.Double" initialValue="1" verbalization="arabadegerkatsayisi"/>
+  <variables name="arabatramerKatsayisi" type="java.lang.Double" initialValue="1" verbalization="arabatramerKatsayisi"/>
+  <variables name="arabaMotorhacmiKatsayisi" type="java.lang.Double" initialValue="1" verbalization="arabaMotorhacmiKatsayisi"/>
+  <variables name="arabaMarkaKatsayisi" type="java.lang.Double" initialValue="1" verbalization="arabaMarkaKatsayisi"/>
+  <variables name="sigortaRequest" type="OtomobilRequest" initialValue="" verbalization="sigortaRequest"/>
+  <variables name="sigortaResponse" type="OtomobilResponse" initialValue="" verbalization="sigortaResponse"/>
+  <variables name="musteriToplamKazaTutari" type="java.lang.Double" initialValue="1" verbalization="musteriToplamKazaTutari"/>
+</ilog.rules.studio.model.base:VariableSet>

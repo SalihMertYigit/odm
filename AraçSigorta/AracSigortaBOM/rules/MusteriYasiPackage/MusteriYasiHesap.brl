@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>MusteriYasiHesap</name>
+  <uuid>e1a933be-06c2-469c-8d7e-243ef5876894</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if the musteri yasi of the musteri bilgileri of sigortaRequest is at most 30
+then
+set the odenecek tutar of sigortaResponse to the odenecek tutar of sigortaResponse + 300;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

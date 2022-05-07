@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
+  <name>AracKazaTablosu</name>
+  <uuid>1b4898d2-e64d-46b6-b839-c8e9ed19a10d</uuid>
+  <locale>en_US</locale>
+  <definition>
+<DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
+  <Body>
+    <Structure>
+      <ConditionDefinitions>
+        <ConditionDefinition Id="C0">
+          <ExpressionDefinition>
+            <Text><![CDATA[the tramer kaydi of the otomobil bilgileri of the musteri bilgileri of sigortaRequest is at least <min> and less than <max>]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+      </ConditionDefinitions>
+      <ActionDefinitions>
+        <ActionDefinition Id="A1">
+          <ExpressionDefinition>
+            <Text><![CDATA[set arabatramerKatsayisi to <a number>]]></Text>
+          </ExpressionDefinition>
+        </ActionDefinition>
+        <ActionDefinition Id="A0">
+          <ExpressionDefinition>
+            <Text><![CDATA[set the odenecek tutar of sigortaResponse  to the odenecek tutar of sigortaResponse * arabatramerKatsayisi]]></Text>
+          </ExpressionDefinition>
+        </ActionDefinition>
+      </ActionDefinitions>
+    </Structure>
+    <Contents>
+      <Partition DefId="C0">
+        <Condition>
+          <Expression>
+            <Param><![CDATA[0]]></Param>
+            <Param><![CDATA[5000]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA[1.1]]></Param>
+              </Expression>
+            </Action>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[5000]]></Param>
+            <Param><![CDATA[15000]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA[1.2]]></Param>
+              </Expression>
+            </Action>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[15000]]></Param>
+            <Param><![CDATA[30000]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA[1.6]]></Param>
+              </Expression>
+            </Action>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[30000]]></Param>
+            <Param><![CDATA[60000]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA[2.4]]></Param>
+              </Expression>
+            </Action>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[60000]]></Param>
+            <Param><![CDATA[150000]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA[3]]></Param>
+              </Expression>
+            </Action>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[150000]]></Param>
+            <Param><![CDATA[9999999]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA[5]]></Param>
+              </Expression>
+            </Action>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+      </Partition>
+    </Contents>
+  </Body>
+  <Resources DefaultLocale="en_US">
+    <ResourceSet Locale="en_TR">
+      <Data Name="Definitions(A0)#HeaderText"><![CDATA[Tutar]]></Data>
+      <Data Name="Definitions(A0)#Width"><![CDATA[662]]></Data>
+      <Data Name="Definitions(A1)#HeaderText"><![CDATA[Tramer Katsayisi]]></Data>
+      <Data Name="Definitions(A1)#Width"><![CDATA[269]]></Data>
+      <Data Name="Definitions(C0)#HeaderText"><![CDATA[Tramer Kaydi]]></Data>
+      <Data Name="Definitions(C0)#Width"><![CDATA[443]]></Data>
+    </ResourceSet>
+  </Resources>
+</DT></definition>
+</ilog.rules.studio.model.dt:DecisionTable>

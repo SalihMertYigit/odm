@@ -1,0 +1,16 @@
+<b2x:translation xmlns:b2x="http://schemas.ilog.com/JRules/1.3/Translation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.ilog.com/JRules/1.3/Translation ilog/rules/schemas/1_3/b2x.xsd">
+    <id>940b9c10-da43-495e-b660-584c4b3bddc0</id>
+    <lang>ARL</lang>
+    <class>
+        <businessName>Otomobil</businessName>
+        <attribute>
+            <name>markaSanal</name>
+            <getter language="arl"><![CDATA[
+            return this.marka;
+            ]]></getter>
+            <setter language="arl"><![CDATA[
+            this.marka=value;
+            ]]></setter>
+        </attribute>
+    </class>
+</b2x:translation>

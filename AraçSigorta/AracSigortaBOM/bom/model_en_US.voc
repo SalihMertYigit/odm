@@ -1,0 +1,47 @@
+# Vocabulary Properties
+uuid = 629828da-cbba-43bc-8d07-17d2011f048d
+
+# Musteri
+Musteri#concept.label = musteri
+Musteri.aracSahibiToplamKazaTutari#phrase.action = set the arac sahibi toplam kaza tutari of {this} to {arac sahibi toplam kaza tutari}
+Musteri.aracSahibiToplamKazaTutari#phrase.navigation = {arac sahibi toplam kaza tutari} of {this}
+Musteri.ehliyetYasi#phrase.action = set the ehliyet yasi of {this} to {ehliyet yasi}
+Musteri.ehliyetYasi#phrase.navigation = {ehliyet yasi} of {this}
+Musteri.musteriYasi#phrase.action = set the musteri yasi of {this} to {musteri yasi}
+Musteri.musteriYasi#phrase.navigation = {musteri yasi} of {this}
+Musteri.otomobilBilgileri#phrase.action = set the otomobil bilgileris of {this} to {otomobil bilgileri}
+Musteri.otomobilBilgileri#phrase.navigation = {otomobil bilgileri} of {this}
+
+# Otomobil
+Otomobil#concept.label = otomobil
+Otomobil.arabaYasi#phrase.action = set the araba yasi of {this} to {araba yasi}
+Otomobil.arabaYasi#phrase.navigation = {araba yasi} of {this}
+Otomobil.aracDeger#phrase.action = set the arac deger of {this} to {arac deger}
+Otomobil.aracDeger#phrase.navigation = {arac deger} of {this}
+Otomobil.aracTuru#phrase.action = set the arac turu of {this} to {arac turu}
+Otomobil.aracTuru#phrase.navigation = {arac turu} of {this}
+Otomobil.markaSanal#phrase.action = set the marka of {this} to {marka}
+Otomobil.markaSanal#phrase.clearer = clear the marka of {this}
+Otomobil.markaSanal#phrase.navigation = {marka} of {this}
+Otomobil.motorHacmi#phrase.action = set the motor hacmi of {this} to {motor hacmi}
+Otomobil.motorHacmi#phrase.navigation = {motor hacmi} of {this}
+Otomobil.tramerKaydi#phrase.action = set the tramer kaydi of {this} to {tramer kaydi}
+Otomobil.tramerKaydi#phrase.navigation = {tramer kaydi} of {this}
+
+# OtomobilRequest
+OtomobilRequest#concept.label = otomobil request
+OtomobilRequest.musteriBilgileri#phrase.action = set the musteri bilgileri of {this} to {musteri bilgileri}
+OtomobilRequest.musteriBilgileri#phrase.navigation = {musteri bilgileri} of {this}
+
+# OtomobilResponse
+OtomobilResponse#concept.label = otomobil response
+OtomobilResponse.mesaj#phrase.action = set the mesaj of {this} to {mesaj}
+OtomobilResponse.mesaj#phrase.navigation = {mesaj} of {this}
+OtomobilResponse.odenecekTutar#phrase.action = set the odenecek tutar of {this} to {odenecek tutar}
+OtomobilResponse.odenecekTutar#phrase.navigation = {odenecek tutar} of {this}
+OtomobilResponse.otomobilBilgileri#phrase.action = set the otomobil bilgileri of {this} to {otomobil bilgileri}
+OtomobilResponse.otomobilBilgileri#phrase.navigation = {otomobil bilgileri} of {this}
+
+# util
+util#concept.label = util
+util.aracBilgileriSetle(OtomobilRequest,OtomobilResponse)#phrase.action = util.aracBilgileriSetle({0}, {1})

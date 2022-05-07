@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>AracBilgileriSetleme</name>
+  <uuid>28daddd0-ef15-475c-ac40-39ef11a8890f</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[then util.aracBilgileriSetle ( sigortaRequest , sigortaResponse ) ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

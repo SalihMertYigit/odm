@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>EhliyetYasSiniri</name>
+  <uuid>b9dc3f33-26e8-4f2d-84d7-5d8dba1d2c19</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if the ehliyet yasi of the musteri bilgileri of sigortaRequest + 18 is at least the musteri yasi of the musteri bilgileri of sigortaRequest
+then
+set the mesaj of sigortaResponse to "ehliyet aldıgınız süre yanlış girilmiştir"; ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

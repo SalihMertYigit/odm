@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="SigortaDEP" usingRuleflow="true" ruleflowName="SigortaAkis" usingExtractor="true" targetRuleProjectName="AracSigortaBOM">
+  <name>SigortaDEP</name>
+  <uuid>d94dcd84-d1a4-433b-9bfa-f748e150351b</uuid>
+  <referencedVariables variableName="sigortaRequest" variableSetName="Parametreler">
+    <variableSet href="../rules/Parametreler.var#307c40c0-13cc-4c5e-9228-c5d61e0eaa99"/>
+  </referencedVariables>
+  <referencedVariables variableName="sigortaResponse" variableSetName="Parametreler" direction="OUT">
+    <variableSet href="../rules/Parametreler.var#307c40c0-13cc-4c5e-9228-c5d61e0eaa99"/>
+  </referencedVariables>
+  <ruleflow href="../rules/SigortaAkis.rfl#358de0f7-03ac-4963-924b-eff26d79289a"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="SigortaDEP_extractor" validator="None"/>
+  <targetRuleProject href="../../AracSigortaBOM#6ea31ad0-55ac-4f59-8ba9-e8e51c288f41"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

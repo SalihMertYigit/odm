@@ -1,0 +1,26 @@
+# Vocabulary Properties
+uuid = b42be5cc-b192-407b-ba99-7e9bc92d294c
+
+# MarkaDomain
+MarkaDomain#concept.label = MarkaDomain
+MarkaDomain.AUDİ#instance.label = Audi
+MarkaDomain.BMW#instance.label = Bmw
+MarkaDomain.CHEVROLET#instance.label = Chevrolet
+MarkaDomain.CİTROEN#instance.label = Citroen
+MarkaDomain.DACIA#instance.label = Dacia
+MarkaDomain.FORD#instance.label = Ford
+MarkaDomain.FİAT#instance.label = Fiat
+MarkaDomain.HONDA#instance.label = Honda
+MarkaDomain.HYUNDAİ#instance.label = Hyundai
+MarkaDomain.KİA#instance.label = Kia
+MarkaDomain.MERCEDES#instance.label = Mercedes
+MarkaDomain.NİSSAN#instance.label = Nissan
+MarkaDomain.OPEL#instance.label = Opel
+MarkaDomain.PEUGEOT#instance.label = Peugeot
+MarkaDomain.RENAULT#instance.label = Renault
+MarkaDomain.SEAT#instance.label = Seat
+MarkaDomain.SKODA#instance.label = Skoda
+MarkaDomain.SUZUKİ#instance.label = Suzuki
+MarkaDomain.TOYOTA#instance.label = Toyota
+MarkaDomain.VOLKSWAGEN#instance.label = Volkswagen
+MarkaDomain.VOLVO#instance.label = Volvo
